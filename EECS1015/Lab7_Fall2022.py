@@ -23,7 +23,7 @@ def print_student_info():
     print("---- Lab 7 ----")
     print("Name: Bardia Moshiri")
     print("Section A")
-    print("Student id: ")
+    print("Student id:")
     print("Email: fakeshell@bardia.tech")
 
 def task0():
@@ -47,9 +47,9 @@ def task1():
     print(f"{firstResult} {secondResult} {thirdResult}")
 
 def merge_dict(firstDict, secondDict):
-    thirdDict = firstDict.copy()
-    thirdDict.update(secondDict)
-    print(f"dict2 merged into dict1\n{thirdDict}")
+    for key in firstDict:
+        secondDict[key] = firstDict[key]
+    print(f"dict2 merged into dict1\n{secondDict}")
 
 def task2():
     dict1 = {8:"Exercise", 9:"Breakfast", 12:"Lunch", 3:"Study", 6:"Netflix"}
